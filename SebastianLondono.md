@@ -86,6 +86,10 @@ create table conversion1 as SELECT product_id, cantidad_total/clicks as conversi
 Notas
 ALTER TABLE conversion1 RENAME TO conversion_1; //para cambiar el nombre de la tabla al esperado en la BD
 - Tengo este error al hacer el export:
-ERROR tool.ExportTool: Encountered IOException running export job:
-java.io.IOException: Caught Exception checking database column sku in  hcatalog table.
+
+#No entiendo por que el error al exportar, se validaron los nombres de los campos y tipos de datos
+#No hay detalle del error
+ERROR tool.ExportTool: Error during export:
+Export job failed!
+
 
