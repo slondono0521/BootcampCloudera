@@ -80,8 +80,12 @@ create table conversion1 as SELECT product_id, cantidad_total/clicks as conversi
 --connect jdbc:mysql://34.205.65.241:3306/ecommerce_cloudera \
 --username bootcamp \
 --password bootcamp \
---table conversion_1 \
+--table conversion3 \
 --hcatalog-table conversion_1
 
 Notas
 ALTER TABLE conversion1 RENAME TO conversion_1; //para cambiar el nombre de la tabla al esperado en la BD
+- Tengo este error al hacer el export:
+ERROR tool.ExportTool: Encountered IOException running export job:
+java.io.IOException: Caught Exception checking database column sku in  hcatalog table.
+
