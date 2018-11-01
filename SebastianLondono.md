@@ -78,5 +78,8 @@ create table conversion1 as SELECT product_id, cantidad_total/clicks as conversi
 --connect jdbc:mysql://34.205.65.241:3306/ecommerce_cloudera \
 --username bootcamp \
 --password bootcamp \
---table conversion1 \
---hcatalog-table conversion1
+--table conversion_1 \
+--hcatalog-table conversion_1
+
+Notas
+ALTER TABLE conversion1 RENAME TO conversion_1; //para cambiar el nombre de la tabla al esperado en la BD
